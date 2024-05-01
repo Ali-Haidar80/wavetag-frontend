@@ -7,7 +7,7 @@ import { socialLinks } from "@/constants/constants";
 import { PlusIcon } from "@/icons";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [modal, setModal] = useState<boolean>(false);
   const [subModal, setSubModal] = useState<boolean>(false);
   return (
@@ -44,4 +44,4 @@ const page = () => {
     </div>
   );};
 
-export default page;
+export default Page;

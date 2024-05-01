@@ -4,7 +4,7 @@ import SwitchButton from '@/Components/SwitchButton'
 import { SettingInputTypes } from '@/types/setting'
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [inputs, setInputs] = useState<SettingInputTypes>({
     email: "",
     password: "",
@@ -59,4 +59,4 @@ const page: React.FC = () => {
   )
 }
 
-export default page
+export default Page

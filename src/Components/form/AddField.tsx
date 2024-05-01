@@ -165,7 +165,7 @@ const AddField: React.FC<AddFieldType> = ({ onAddField, onClose, EditField }) =>
                       className="border rounded-2xl border-secondary-200 outline-none w-full py-2 px-3 mr-2"
                     />
                     <TrashIcon
-                      onClick={() => handleRemoveOption(index)}
+                      // onClick={() => handleRemoveOption(index)}
                     />
                   </div>
                 ))}

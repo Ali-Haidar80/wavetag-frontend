@@ -6,7 +6,7 @@ import QrCode from '@/Components/qrcode/QRCodeGenerator'
 import UploadImg from '@/Components/qrcode/UploadImg'
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
 
   const [logo, setLogo] = useState<File | null | undefined>()
 
@@ -28,4 +28,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -30,7 +30,6 @@ const InputField: React.FC<CustomInputProps> = memo(
   }) => {
     const [inputValue, setInputValue] = useState("");
     const [isSwitchEnabled, setIsSwitchEnabled] = useState(false);
-    console.log('sodfksjdklfj')
     const handleInputChange = useCallback(
       (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setInputValue(e.target.value);
@@ -72,10 +71,10 @@ const InputField: React.FC<CustomInputProps> = memo(
 
         {isToggle ? <SwitchButton isChecked={false} label="" onToggle={handleToggleChange} /> : ""}
         {isEdit ? (
-          <EditIcon height={"26px"} width={"26px"} onClick={handlerEdit} />
+          <EditIcon />
         ) : null}
         {isDelete ? (
-          <TrashIcon onClick={handlerDelete} height={"30px"} width={"30px"} />
+          <TrashIcon />
         ) : null}
       </div>
     );

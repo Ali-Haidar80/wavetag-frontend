@@ -2,7 +2,7 @@
 import { themes } from '@/constants/constants'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
 
   return (
     <div className='bg-light-100 w-full p-6  rounded-b-2xl  mb-10'>
@@ -11,7 +11,7 @@ const page = () => {
           {
             Array.from({length:2},()=>(
               themes.map((s,idx)=>(
-                <img src={s.path} alt="" />
+                <img key={idx} src={s.path} alt="" />
               ))
             ))
           }
@@ -21,4 +21,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,8 +6,8 @@ const RecentActivity = () => {
     <div className='bg-light-100 rounded-3xl w-[100%] h-[450px] md:h-[550px] py-2'>
         <div className="overflow-y-auto w-[90%] h-[435px] md:h-[535px] mx-4">
             {
-                Array.from({length:16},()=>(
-            <div className="flex items-center gap-1 my-3">
+                Array.from({length:16},(item,id)=>(
+            <div key={id} className="flex items-center gap-1 my-3">
             <img className="w-[50px] h-[50px] rounded-full mr-1" src="/assets/insights/user.jpeg" alt="user" />
             <h2 className="text-base font-medium">John Doe</h2>
             <p className="text-xs font-normal text-secondary-400  ">Connected with Julie Doe </p>

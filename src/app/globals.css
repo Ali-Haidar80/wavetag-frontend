@@ -37,11 +37,15 @@ body {
 .active svg path {
     fill: #1814F3;
 }
-.active {
+.activehome svg path{
+  stroke: #1814F3;
+  stroke-width: 1.8;
+}
+.active,.activehome {
   position: relative;
   overflow: hidden;
 }
-.active h2,.active h3{
+.active h2,.active h3,.activehome h2{
   font-weight: 500;
     color: #1814F3;
 }
@@ -49,15 +53,18 @@ body {
   width: 20px;
   height: 20px;
 }
-.active .icons svg{
+.active .icons svg,.activehome .icons svg{
   width: 22px;
   height: 22px;
 }
-.active .tab, .active .subtab{
+.active .tab, .active .subtab,.activehome .tab, .activehome .subtab{
   display: flex;
 }
 .plus-svg svg,.plus-svg svg path{
   stroke: #949494;
+}
+.add-card svg,.add-card svg path{
+      stroke: #494949;
 }
 @media screen and (max-width: 768px) {
   .icons svg{
@@ -71,6 +78,9 @@ body {
   .icons h2{
     font-size: 11px;
   }
+}
+.custom-gradient{
+  background: conic-gradient(from 180deg at 50% 50%, #b4b2b2 0deg, rgba(211,209,209,0.49) 183.6deg,rgba(181,179,179,0.46) 208.8deg, rgba(103,103,103,0.38) 333.38deg, rgba(165,165,165,0) 360deg);
 }
 /* Nav and Sub Nav CSS End */
 

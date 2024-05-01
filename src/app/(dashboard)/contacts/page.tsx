@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   useEffect(() => {
     router.push("/contacts/lead");
@@ -11,4 +11,4 @@ const page = () => {
   return <div></div>;
 };
 
-export default page;
+export default Page;

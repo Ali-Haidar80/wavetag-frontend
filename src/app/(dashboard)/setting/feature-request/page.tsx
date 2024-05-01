@@ -3,7 +3,7 @@ import CustomInput from '@/Components/general/CustomInput'
 import { FeatureInputTypes } from '@/types/setting'
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [inputs, setInputs] = useState<FeatureInputTypes>({
     message: "",
   });
@@ -36,4 +36,4 @@ const page: React.FC = () => {
   )
 }
 
-export default page
+export default Page

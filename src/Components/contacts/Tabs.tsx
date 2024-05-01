@@ -16,7 +16,7 @@ const Tabs: React.FC<TabsProps> = ({ tabTitles, onTabClick }) => {
   return (
     <div className="flex">
       {tabTitles.map((title, index) => (
-        <div>
+        <div key={index}>
           <div
             style={{
               color: activeTab === index ? "#1814F3" : "",

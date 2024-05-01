@@ -8,7 +8,7 @@ import UploadCoverPic from '@/Components/about/UploadCoverPic'
 import UploadCompanyLogo from '@/Components/about/UploadCompanyLogo'
 import Preview from '@/Components/dashboard/Preview'
 
-const page = () => {
+const Page = () => {
   const [inputs, setInputs] = useState<AboutInputTypes>({
     cardTitle: "",
     fullname: "",
@@ -56,4 +56,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

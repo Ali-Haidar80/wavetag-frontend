@@ -26,7 +26,7 @@ const Modal = ({setModal,setSubModal}:{setModal:Dispatch<SetStateAction<boolean>
                <div className="flex flex-wrap overflow-y-auto  gap-4 mt-6">
                     {
                         Array.from({length:14},(item,id)=>(
-                          <button onClick={HandleModdal} className="plus-svg bg-secondary-100  flex items-center justify-between w-[240px] py-3 px-3 rounded-lg ">
+                          <button key={id} onClick={HandleModdal} className="plus-svg bg-secondary-100  flex items-center justify-between w-[240px] py-3 px-3 rounded-lg ">
                             <div className="flex items-center gap-2"><img src={"/assets/social links/whatsapp.png"} className="h-[30px] w-[30px]" /><h3>Text</h3></div>
                             <PlusIcon/>
                           </button>

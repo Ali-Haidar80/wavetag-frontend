@@ -5,8 +5,8 @@ const TappedLinks = () => {
         <p className="text-secondary-500   mt-6 text-[1.375rem] font-semibold mb-2"> Top Tapped Links </p>
         <div className='bg-light-100 rounded-3xl flex flex-col gap-4 md:gap-3 p-4 h-[450px] md:h-max w-[100%]'>
             {
-                Array.from({length:3},()=>(
-                    <div className="flex flex-col md:flex-row gap-4 md:gap-3">
+                Array.from({length:3},(item,id)=>(
+                    <div key={id} className="flex flex-col md:flex-row gap-4 md:gap-3">
                         <div className="flex items-center justify-between h-[50px] px-4 w-full md:w-[50%] bg-secondary-100  rounded-lg">
                             <div className="flex items-center gap-3 text-base font-medium">
                             <img src="/assets/social links/linkedin.png" alt={"linkedin"} className="h-[30px] w-[30px]" />

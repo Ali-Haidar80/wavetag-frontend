@@ -3,7 +3,7 @@ import CustomInput from '@/Components/general/CustomInput'
 import { SupportInputTypes } from '@/types/setting'
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
   const [inputs, setInputs] = useState<SupportInputTypes>({
     subject: "",
     message: "",
@@ -42,4 +42,4 @@ const page: React.FC = () => {
   )
 }
 
-export default page
+export default Page

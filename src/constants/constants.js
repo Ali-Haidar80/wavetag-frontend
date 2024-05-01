@@ -1,16 +1,16 @@
 import {
   AccessoriesIcon,
   ContactIcon,
+  EmailIcon2,
+  HomeIcon,
   InsightIcon,
+  InstagramIcon,
   IntegratioIcon,
+  MusicIcon,
   MyCardIcon,
-  RBGInstagramIcon,
-  RGBEmailIcon,
-  RGBLinkedInIcon,
-  RGBPhoneIcon,
-  RGBSnapChatIcon,
-  RGBTextIcon,
   SettingIcon,
+  TwiterIcon,
+  YoutubeIcon,
 } from "@/icons";
 
 export const Links = [
@@ -213,4 +213,8 @@ export const themes = [
   {path:"/assets/themes/6.png"},
   {path:"/assets/themes/8.png"},
   {path:"/assets/themes/9.png"},
+]
+
+export const PreviewSocial = [
+  <EmailIcon2/>,<TwiterIcon/>,<InstagramIcon/>,<YoutubeIcon/>,<MusicIcon/>
 ]

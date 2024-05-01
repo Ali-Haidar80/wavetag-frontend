@@ -1,7 +1,7 @@
 import Integrations from "@/Components/integrations/Integrations";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
       <div className="font-semibold text-2xl">
         <Integrations />
@@ -9,4 +9,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

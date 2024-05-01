@@ -8,7 +8,7 @@ import InsightSection from "@/Components/insight/InsightSection";
 import { insightData } from "@/constants/constants";
 import { Calendar } from "@/icons";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="">
       <div className="flex items-center justify-between mx-6">
@@ -48,4 +48,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

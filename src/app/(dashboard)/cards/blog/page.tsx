@@ -5,7 +5,7 @@ import Preview from '@/Components/dashboard/Preview';
 import { AboutInputTypes } from '@/types/about';
 import React, { FormEvent, useState } from 'react'
 
-const page = () => {
+const Page = () => {
   const [inputs, setInputs] = useState<AboutInputTypes>({
     cardTitle: "",
     fullname: "",
@@ -37,4 +37,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

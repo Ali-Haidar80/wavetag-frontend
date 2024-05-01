@@ -3,7 +3,7 @@ import Package from '@/Components/Package'
 import { CheckIcon } from '@/icons'
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
   const [active, setActive] = useState<string>('monthly')
 
   return (
@@ -31,6 +31,6 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
 
 

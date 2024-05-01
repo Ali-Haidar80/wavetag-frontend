@@ -19,7 +19,7 @@ interface ModalProps {
               <hr className="my-2 mb-4 text-primary-50" />
               <dl className="">
               {Object.entries(data).map(([key, value]) => (
-                <div className="flex flex-col pb-3 ">
+                <div key={key} className="flex flex-col pb-3 ">
                   <dt className="mb-1 text-secondary-400 ">{key}</dt>
                   <dd className="text-lg font-semibold text-dark-90">{value}</dd>
                 </div>

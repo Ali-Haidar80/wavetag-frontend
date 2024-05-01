@@ -11,7 +11,7 @@ const Header = () => {
     setIsOpened(false)
   }
   return (
-    <div className="flex items-center justify-between mx-6 mt-6">
+    <div className="hidden items-center justify-between mx-6 mt-6 lg:flex">
       <img src="/assets/img/brand.png" alt="brand" />
       <div className="flex items-center gap-6">
         <div className="hover:rotate-[30deg] transition-all cursor-pointer">

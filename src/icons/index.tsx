@@ -1,4 +1,3 @@
-import React, { useCallback, useState } from "react";
 
 export const EmailIcon = () => (
   <svg
@@ -192,12 +191,102 @@ export const SettingIcon = () => (
   </svg>
 );
 
+export const VerifiedIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.84778 2.09697C6.35112 1.14739 7.34948 0.5 8.5 0.5C9.65052 0.5 10.6489 1.14739 11.1522 2.09697C12.1796 1.78143 13.3433 2.0296 14.1569 2.84315C14.9704 3.65669 15.2186 4.82041 14.903 5.84778C15.8526 6.35112 16.5 7.34948 16.5 8.5C16.5 9.65052 15.8526 10.6489 14.903 11.1522C15.2186 12.1796 14.9704 13.3433 14.1569 14.1569C13.3433 14.9704 12.1796 15.2186 11.1522 14.903C10.6489 15.8526 9.65052 16.5 8.5 16.5C7.34947 16.5 6.35112 15.8526 5.84778 14.903C4.82041 15.2186 3.65669 14.9704 2.84314 14.1569C2.02961 13.3433 1.78144 12.1796 2.09698 11.1522C1.14739 10.6489 0.5 9.65052 0.5 8.5C0.5 7.34948 1.14739 6.35112 2.09697 5.84778C1.78143 4.82041 2.0296 3.65669 2.84314 2.84314C3.65669 2.0296 4.82041 1.78143 5.84778 2.09697ZM12.31 6.49246C12.3686 6.55104 12.3686 6.64602 12.31 6.70459L7.57236 11.4422C7.51378 11.5008 7.41881 11.5008 7.36023 11.4422L4.74393 8.82591C4.68536 8.76734 4.68536 8.67236 4.74393 8.61378L5.59246 7.76525C5.65104 7.70668 5.74602 7.70668 5.80459 7.76525L7.36023 9.32089C7.41881 9.37947 7.51378 9.37947 7.57236 9.32089L11.2493 5.64393C11.3079 5.58536 11.4029 5.58536 11.4614 5.64393L12.31 6.49246Z" fill="#1DA1F2"/>
+  <path d="M12.31 6.70459C12.3686 6.64602 12.3686 6.55104 12.31 6.49246L11.4614 5.64393C11.4029 5.58536 11.3079 5.58536 11.2493 5.64393L7.57236 9.32089C7.51378 9.37947 7.41881 9.37947 7.36023 9.32089L5.80459 7.76525C5.74602 7.70668 5.65104 7.70668 5.59246 7.76525L4.74393 8.61378C4.68536 8.67236 4.68536 8.76734 4.74393 8.82591L7.36023 11.4422C7.41881 11.5008 7.51378 11.5008 7.57236 11.4422L12.31 6.70459Z" fill="white"/>
+  </svg>
+)
+export const NotificationIcon3 = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+)
 export const NotificationIcon2 = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.52992 14.394C2.31727 15.7471 3.268 16.6862 4.43205 17.1542C8.89481 18.9486 15.1052 18.9486 19.5679 17.1542C20.732 16.6862 21.6827 15.7471 21.4701 14.394C21.3394 13.5625 20.6932 12.8701 20.2144 12.194C19.5873 11.2975 19.525 10.3197 19.5249 9.27941C19.5249 5.2591 16.1559 2 12 2C7.84413 2 4.47513 5.2591 4.47513 9.27941C4.47503 10.3197 4.41272 11.2975 3.78561 12.194C3.30684 12.8701 2.66061 13.5625 2.52992 14.394Z" stroke="#656565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M9 21C9.79613 21.6219 10.8475 22 12 22C13.1525 22 14.2039 21.6219 15 21" stroke="#656565" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
+)
+export const EmailIcon2 = () => (
+  <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.83317 5.33325H27.1665C28.6332 5.33325 29.8332 6.53325 29.8332 7.99992V23.9999C29.8332 25.4666 28.6332 26.6666 27.1665 26.6666H5.83317C4.3665 26.6666 3.1665 25.4666 3.1665 23.9999V7.99992C3.1665 6.53325 4.3665 5.33325 5.83317 5.33325Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M29.8332 8L16.4998 17.3333L3.1665 8" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+)
+export const TwiterIcon = () => (
+  <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.1668 3.99998C29.89 4.90062 28.4763 5.58946 26.9802 6.03998C26.1772 5.11666 25.1099 4.46224 23.9229 4.16521C22.7358 3.86819 21.4862 3.94291 20.3429 4.37925C19.1997 4.81559 18.2181 5.59252 17.5308 6.60494C16.8435 7.61736 16.4838 8.81643 16.5002 10.04V11.3733C14.157 11.4341 11.8352 10.9144 9.74151 9.86057C7.64782 8.80675 5.84725 7.25149 4.50016 5.33331C4.50016 5.33331 -0.833171 17.3333 11.1668 22.6666C8.42087 24.5306 5.14971 25.4652 1.8335 25.3333C13.8335 32 28.5002 25.3333 28.5002 9.99998C28.4989 9.62858 28.4632 9.25811 28.3935 8.89331C29.7543 7.5513 30.7146 5.85693 31.1668 3.99998Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+)
+export const InstagramIcon = () => (
+  <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M23.1665 2.66675H9.83317C6.15127 2.66675 3.1665 5.65152 3.1665 9.33341V22.6667C3.1665 26.3486 6.15127 29.3334 9.83317 29.3334H23.1665C26.8484 29.3334 29.8332 26.3486 29.8332 22.6667V9.33341C29.8332 5.65152 26.8484 2.66675 23.1665 2.66675Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21.8336 15.1599C21.9981 16.2696 21.8086 17.4029 21.2919 18.3986C20.7753 19.3943 19.9578 20.2018 18.9558 20.7061C17.9537 21.2105 16.8182 21.386 15.7106 21.2078C14.6031 21.0296 13.5799 20.5067 12.7867 19.7135C11.9935 18.9202 11.4706 17.8971 11.2924 16.7895C11.1141 15.682 11.2897 14.5464 11.794 13.5444C12.2984 12.5424 13.1058 11.7249 14.1016 11.2082C15.0973 10.6916 16.2306 10.502 17.3403 10.6666C18.4722 10.8344 19.5201 11.3619 20.3292 12.171C21.1383 12.9801 21.6657 14.028 21.8336 15.1599Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23.8335 8.66675H23.8468" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>  
+)
+export const YoutubeIcon = () => (
+  <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30.5533 8.55992C30.3949 7.92713 30.0723 7.34735 29.6182 6.87913C29.164 6.41091 28.5943 6.07083 27.9666 5.89325C25.6733 5.33325 16.4999 5.33325 16.4999 5.33325C16.4999 5.33325 7.32662 5.33325 5.03328 5.94659C4.40561 6.12416 3.83592 6.46424 3.38174 6.93246C2.92757 7.40068 2.605 7.98047 2.44662 8.61325C2.0269 10.9407 1.8216 13.3017 1.83328 15.6666C1.81832 18.0493 2.02364 20.4283 2.44662 22.7733C2.62123 23.3864 2.95102 23.9441 3.40414 24.3926C3.85726 24.841 4.41838 25.165 5.03328 25.3333C7.32662 25.9466 16.4999 25.9466 16.4999 25.9466C16.4999 25.9466 25.6733 25.9466 27.9666 25.3333C28.5943 25.1557 29.164 24.8156 29.6182 24.3474C30.0723 23.8792 30.3949 23.2994 30.5533 22.6666C30.9698 20.3567 31.175 18.0137 31.1666 15.6666C31.1816 13.2839 30.9763 10.9048 30.5533 8.55992Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13.5 20.0266L21.1667 15.6666L13.5 11.3066V20.0266Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>  
+)
+export const MusicIcon = () => (
+  <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.5 24V6.66667L28.5 4V21.3333" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.5 28C10.7091 28 12.5 26.2091 12.5 24C12.5 21.7909 10.7091 20 8.5 20C6.29086 20 4.5 21.7909 4.5 24C4.5 26.2091 6.29086 28 8.5 28Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24.5 25.3333C26.7091 25.3333 28.5 23.5424 28.5 21.3333C28.5 19.1241 26.7091 17.3333 24.5 17.3333C22.2909 17.3333 20.5 19.1241 20.5 21.3333C20.5 23.5424 22.2909 25.3333 24.5 25.3333Z" stroke="#1E1E20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>   
+)
+export const TwitchIcon = () => (
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" fill="#9146FF"/>
+<g clip-path="url(#clip0_13_1344)">
+<path d="M30.8569 15.6734H28.8977V21.551H30.8569V15.6734Z" fill="#1E1E20"/>
+<path d="M23.5099 15.6734H25.4691V21.551H23.5099V15.6734Z" fill="#1E1E20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.1426 10.2856L12.2446 15.1836V32.8163H18.1222V37.7142L23.0201 32.8163H26.9385L35.7548 23.9999V10.2856H17.1426ZM33.7956 23.0203L29.8773 26.9387H25.9589L22.5303 30.3673V26.9387H18.1222V12.2448H33.7956V23.0203Z" fill="#1E1E20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.8773 26.9387L33.7956 23.0203V12.2448H18.1222V26.9387H22.5303V30.3673L25.9589 26.9387H29.8773ZM30.8569 15.6734H28.8977V21.551H30.8569V15.6734ZM23.5099 15.6734H25.4691V21.551H23.5099V15.6734Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_13_1344">
+<rect width="27.4286" height="27.4286" fill="white" transform="translate(10.2856 10.2856)"/>
+</clipPath>
+</defs>
+</svg>
+ 
+)
+export const YoutubeIcon2 = () => (
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" fill="white"/>
+<g clip-path="url(#clip0_13_1355)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34.7165 14.9725C35.8974 15.2886 36.8255 16.2166 37.1416 17.3975C37.7129 19.5358 37.7152 23.9999 37.7152 23.9999C37.7152 23.9999 37.7152 28.4639 37.1416 30.6023C36.8255 31.7832 35.8974 32.7112 34.7165 33.0273C32.5783 33.6008 24.0001 33.6008 24.0001 33.6008C24.0001 33.6008 15.4221 33.6008 13.2838 33.0273C12.1028 32.7112 11.1748 31.7832 10.8587 30.6023C10.2852 28.4639 10.2852 23.9999 10.2852 23.9999C10.2852 23.9999 10.2852 19.5358 10.8587 17.3975C11.1748 16.2166 12.1028 15.2886 13.2838 14.9725C15.4221 14.3989 24.0001 14.3989 24.0001 14.3989C24.0001 14.3989 32.5783 14.3989 34.7165 14.9725ZM28.3807 24.0003L21.2545 28.1143V19.8862L28.3807 24.0003Z" fill="#FF0000"/>
+<path d="M21.2545 28.1143L28.3807 24.0003L21.2545 19.8862V28.1143Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_13_1355">
+<rect width="27.4286" height="27.4286" fill="white" transform="translate(10.2856 10.2856)"/>
+</clipPath>
+</defs>
+</svg>
+
+ 
+)
+export const AstroIcon = () => (
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" fill="#3280F5"/>
+<g clip-path="url(#clip0_13_1350)">
+<path d="M10.5 37.39H37.5V10.39H10.5V37.39Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_13_1350">
+<rect width="27.4286" height="27.4286" fill="white" transform="translate(10.2856 10.2856)"/>
+</clipPath>
+</defs>
+</svg>
 )
 
 export const NotificationIcon = () => (
@@ -229,6 +318,13 @@ export const NotificationIcon = () => (
     </defs>
   </svg>
 );
+
+export const HomeIcon = ()=>(
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0001 18V15" stroke="#718EBF" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M2.35151 13.2135C1.99849 10.9162 1.82198 9.76763 2.25629 8.74938C2.69059 7.73112 3.65415 7.03443 5.58126 5.64106L7.02111 4.6C9.41841 2.86667 10.6171 2 12.0001 2C13.3832 2 14.5818 2.86667 16.9791 4.6L18.419 5.64106C20.3461 7.03443 21.3097 7.73112 21.744 8.74938C22.1783 9.76763 22.0018 10.9162 21.6487 13.2135L21.3477 15.1724C20.8473 18.4289 20.597 20.0572 19.4291 21.0286C18.2612 22 16.5538 22 13.1389 22H10.8613C7.44646 22 5.73903 22 4.57112 21.0286C3.40321 20.0572 3.15299 18.4289 2.65255 15.1724L2.35151 13.2135Z" stroke="#718EBF" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
+)
 
 export const MyCardIcon = () => (
   <svg
@@ -429,37 +525,30 @@ export const EditBrushIcon = () => (
     />
   </svg>
 );
-type EditIcon = {
-  height: string;
-  width: string;
-  onClick: () => void;
-}
-export const EditIcon: React.FC<EditIcon> = React.memo(({ height = '15', width = '14', onClick }) => {
-  const [hovered, setHovered] = useState(false);
+export const PenIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+<path d="M8.08752 2.00474L1.86632 8.22594C1.62658 8.46568 1.39884 8.93317 1.35089 9.2688L1.01526 11.6422C0.895389 12.5053 1.49473 13.1046 2.35779 12.9847L4.73117 12.6491C5.0668 12.6012 5.53432 12.3734 5.77406 12.1337L11.9953 5.91247C13.0621 4.84563 13.5775 3.599 11.9953 2.01673C10.413 0.422468 9.16634 0.92592 8.08752 2.00474Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.2005 2.8916C7.72792 4.77355 9.20231 6.25992 11.0962 6.78734" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+)
 
-  const handleMouseEnter = useCallback(
-    () => {
-      setHovered(true);
-    },
-    [hovered]
-  )
-    ;
+export const ShareIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4979 5.41675C17.4979 6.79746 16.3787 7.91675 14.9979 7.91675C13.6172 7.91675 12.4979 6.79746 12.4979 5.41675C12.4979 4.03604 13.6172 2.91675 14.9979 2.91675C16.3787 2.91675 17.4979 4.03604 17.4979 5.41675Z" fill="white"/>
+<path d="M7.49792 10C7.49792 11.3807 6.37863 12.5 4.99792 12.5C3.61722 12.5 2.49792 11.3807 2.49792 10C2.49792 8.61925 3.61722 7.5 4.99792 7.5C6.37863 7.5 7.49792 8.61925 7.49792 10Z" fill="white"/>
+<path d="M17.4979 14.5833C17.4979 15.964 16.3787 17.0833 14.9979 17.0833C13.6172 17.0833 12.4979 15.964 12.4979 14.5833C12.4979 13.2025 13.6172 12.0833 14.9979 12.0833C16.3787 12.0833 17.4979 13.2025 17.4979 14.5833Z" fill="white"/>
+<path d="M7.27167 8.95805L12.6883 6.4585L7.27167 8.95805ZM7.27167 11.0418L12.6883 13.5414L7.27167 11.0418Z" fill="white"/>
+<path d="M7.27167 8.95805L12.6883 6.4585M7.27167 11.0418L12.6883 13.5414" stroke="white" stroke-width="1.5"/>
+</svg>
 
-  const handleMouseLeave = useCallback(() => {
-    setHovered(false);
-  }, [hovered]);
-  const handleClick = useCallback(() => {
-    if (onClick) {
-      onClick();
-    }
-  }, [onClick]);
-  return (
-    <svg width={width} onClick={handleClick} onMouseEnter={handleMouseEnter} className="cursor-pointer" onMouseLeave={handleMouseLeave} height={height} viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8.08752 2.50474L1.86632 8.72594C1.62658 8.96568 1.39884 9.43317 1.35089 9.7688L1.01526 12.1422C0.895389 13.0053 1.49473 13.6046 2.35779 13.4847L4.73117 13.1491C5.0668 13.1012 5.53432 12.8734 5.77406 12.6337L11.9953 6.41247C13.0621 5.34563 13.5775 4.099 11.9953 2.51673C10.413 0.922468 9.16634 1.42592 8.08752 2.50474Z" stroke={hovered ? "#1814F3" : "#6D6D6D"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M7.2002 3.3916C7.72762 5.27355 9.20201 6.75992 11.0959 7.28734" stroke={hovered ? "#1814F3" : "#6D6D6D"} stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+)
+
+export const EditIcon = () => (
+    <svg height = '15' width = '14' viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.08752 2.50474L1.86632 8.72594C1.62658 8.96568 1.39884 9.43317 1.35089 9.7688L1.01526 12.1422C0.895389 13.0053 1.49473 13.6046 2.35779 13.4847L4.73117 13.1491C5.0668 13.1012 5.53432 12.8734 5.77406 12.6337L11.9953 6.41247C13.0621 5.34563 13.5775 4.099 11.9953 2.51673C10.413 0.922468 9.16634 1.42592 8.08752 2.50474Z"  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7.2002 3.3916C7.72762 5.27355 9.20201 6.75992 11.0959 7.28734" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-  )
-});
+  );
 export const DownloadIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -508,42 +597,17 @@ export const SearchIcon = () => (
   </svg>
 )
 
-type TrashIcon = {
-  color?: string;
-  height?: string;
-  width?: string;
-  onClick: () => void;
-}
-export const TrashIcon: React.FC<TrashIcon> = React.memo(({ color = "#6D6D6D", onClick, height = "24", width = "24" }) => {
-  const [hovered, setHovered] = useState(false);
 
-  const handleMouseEnter = useCallback(
-    () => {
-      setHovered(true);
-    },
-    [hovered]
+export const TrashIcon = ()=>(
+  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19.5 6L18.8803 16.0251C18.7219 18.5864 18.6428 19.8671 18.0008 20.7879C17.6833 21.2431 17.2747 21.6273 16.8007 21.916C15.8421 22.5 14.559 22.5 11.9927 22.5C9.42312 22.5 8.1383 22.5 7.17905 21.9149C6.7048 21.6257 6.296 21.2408 5.97868 20.7848C5.33688 19.8626 5.25945 18.5801 5.10461 16.0152L4.5 6" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M3 6H21M16.0557 6L15.3731 4.59173C14.9196 3.65626 14.6928 3.18852 14.3017 2.89681C14.215 2.8321 14.1231 2.77454 14.027 2.7247C13.5939 2.5 13.0741 2.5 12.0345 2.5C10.9688 2.5 10.436 2.5 9.99568 2.73412C9.8981 2.78601 9.80498 2.8459 9.71729 2.91317C9.32164 3.2167 9.10063 3.70155 8.65861 4.67126L8.05292 6" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M9.5 17V11" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M14.5 17V11" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+  
   )
-    ;
 
-  const handleMouseLeave = useCallback(() => {
-    setHovered(false);
-  }, [hovered]);
-  const handleClick = useCallback(() => {
-    if (onClick) {
-      onClick();
-    }
-  }, [onClick]);
-
-  return (
-    <svg onClick={handleClick} onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} className="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" fill="none">
-      <path d="M19.5 5.5L18.8803 15.5251C18.7219 18.0864 18.6428 19.3671 18.0008 20.2879C17.6833 20.7431 17.2747 21.1273 16.8007 21.416C15.8421 22 14.559 22 11.9927 22C9.42312 22 8.1383 22 7.17905 21.4149C6.7048 21.1257 6.296 20.7408 5.97868 20.2848C5.33688 19.3626 5.25945 18.0801 5.10461 15.5152L4.5 5.5" stroke={hovered ? "#FF0000" : color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M3 5.5H21M16.0557 5.5L15.3731 4.09173C14.9196 3.15626 14.6928 2.68852 14.3017 2.39681C14.215 2.3321 14.1231 2.27454 14.027 2.2247C13.5939 2 13.0741 2 12.0345 2C10.9688 2 10.436 2 9.99568 2.23412C9.8981 2.28601 9.80498 2.3459 9.71729 2.41317C9.32164 2.7167 9.10063 3.20155 8.65861 4.17126L8.05292 5.5" stroke={hovered ? "#FF0000" : color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M9.5 16.5V10.5" stroke={hovered ? "#FF0000" : color} strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M14.5 16.5V10.5" stroke={hovered ? "#FF0000" : color} strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  )
-})
 export const Close = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
     <path d="M15 1.5L1 15.5M1 1.5L15 15.5" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
