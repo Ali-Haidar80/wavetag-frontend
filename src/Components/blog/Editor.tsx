@@ -44,7 +44,7 @@ icons['underline'] = `<img class="w-[0.7rem] " src="/assets/svgs/underline.svg" 
 icons['strike'] = `<img  src="/assets/svgs/delS.svg" alt=''/>`
 icons['align']['center'] = `<img class="w-[1rem]" src="/assets/svgs/center.svg" alt=''/>`
 icons['align'][''] = `<img class="w-[1rem]" src="/assets/svgs/leftalign.svg" alt=''/>`
-// icons['align']['right'] = `<img class="w-[1rem]" style={{transform:rotateZ(deg(180))}} src="/assets/svgs/leftalign.svg" alt=''/>`
+icons['align']['right'] = `<img class="w-[1rem]" src="/assets/svgs/rightalign.svg" alt=''/>`
 icons['list']['ordered'] = `<img src="/assets/svgs/right.svg" alt=''/>`
 icons['link'] = `<img src="/assets/svgs/link.svg" alt=''/>`
 icons['image'] = `<img src="/assets/svgs/img.svg" alt=''/>`
@@ -155,21 +155,21 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({ isOpened, setIsOpened, un
       <div className='flex justify-between w-full'>
         <div className="flex lg:flex-row xl:flex-row 2xl:flex-row md:flex-col sm:flex-col xs:flex-col ">
           <div className="flex gap-1">
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-bold"></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-italic"></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-underline ql-active"></button>
-            <button className={`!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-A ${isOpened && '!bg-secondary-150'}`} onClick={() => setIsOpened(!isOpened)}></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-align" value={''}></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-align" value={'center'}></button>
-            {/* <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-align" value={'right'}></button> */}
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-bold"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-italic"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-underline ql-active"></button>
+            <button className={`!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-A ${isOpened && '!bg-secondary-150'}`} onClick={() => setIsOpened(!isOpened)}></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-align" value={''}></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-align" value={'center'}></button>
+            <button className="!pb-6 !w-[40px] !pr-3 !pt-3 rounded-t-md ql-align" value={'right'}></button>
           </div>
           <div className="flex gap-1">
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-list" value={'ordered'}></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-direction" value={'rtl'}></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-link"></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-image"></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-emoji"></button>
-            <button className="!pb-6 !w-[40px] !flex !justify-center !pt-3 rounded-t-md ql-plusbar"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-list" value={'ordered'}></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-direction" value={'rtl'}></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-link"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-image"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-emoji"></button>
+            <button className="!pb-6 !w-[40px]  !pt-3 rounded-t-md ql-plusbar"></button>
           </div>
         </div>
         <div className="flex gap-2 lg:items-center xl:items-center 2xl:items-center md:items-end sm:items-end xs:items-end">
