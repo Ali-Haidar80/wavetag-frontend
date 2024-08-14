@@ -1,4 +1,5 @@
 import { Close, PlusIcon, SearchIcon } from "@/icons"
+import Image from "next/image";
 import { Dispatch, SetStateAction } from "react"
 
 const Modal = ({setModal,setSubModal}:{setModal:Dispatch<SetStateAction<boolean>>,setSubModal:Dispatch<SetStateAction<boolean>>}) => {
@@ -27,7 +28,8 @@ const Modal = ({setModal,setSubModal}:{setModal:Dispatch<SetStateAction<boolean>
                     {
                         Array.from({length:14},(item,id)=>(
                           <button key={id} onClick={HandleModdal} className="plus-svg bg-secondary-100  flex items-center justify-between w-[240px] py-3 px-3 rounded-lg ">
-                            <div className="flex items-center gap-2"><img src={"/assets/social links/whatsapp.png"} className="h-[30px] w-[30px]" /><h3>Text</h3></div>
+                            <div className="flex items-center gap-2"><Image width={100}
+          height={100} src={"/assets/social links/whatsapp.png"} alt="" className="h-[30px] w-[30px]" /><h3>Text</h3></div>
                             <PlusIcon/>
                           </button>
                         ))

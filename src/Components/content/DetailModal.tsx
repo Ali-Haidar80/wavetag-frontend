@@ -1,4 +1,5 @@
 import { ChevronLeft, Close, Share } from "@/icons";
+import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
 const DetailModal = ({setModal, setSubModal}: {setModal: Dispatch<SetStateAction<boolean>>; setSubModal: Dispatch<SetStateAction<boolean>>;}) => {
@@ -22,7 +23,8 @@ const DetailModal = ({setModal, setSubModal}: {setModal: Dispatch<SetStateAction
               <span onClick={CloseModal} className="cursor-pointer"><Close /></span>
             </div>
             <div className="overflow-y-auto overflow-x-hidden">
-            <img className="h-[70px] w-[70px] mx-4 mt-16 mb-10" src="/assets/social links/instagram.png" alt="social links"/>
+            <Image width={100}
+          height={100} className="h-[70px] w-[70px] mx-4 mt-16 mb-10" src="/assets/social links/instagram.png" alt="social links"/>
             <label className="relative inline-flex items-center gap-2 mx-4 text-secondary-300  text-base font-medium cursor-pointer">
               <input type="checkbox" value="" className="sr-only peer" />
               <div className="w-11 h-5 bg-secondary-70  rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-light-100 after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-light-100 after:border-secondary-50 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-info-100 bg-gray"></div>

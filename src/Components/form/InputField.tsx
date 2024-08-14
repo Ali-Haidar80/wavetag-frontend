@@ -4,8 +4,6 @@ import { EditIcon, TrashIcon } from "@/icons";
 
 interface CustomInputProps {
   label?: string;
-  width?: string;
-  height?: string;
   onChange: (value: string) => void;
   isToggle?: boolean;
   isInputArea?: boolean;
@@ -16,20 +14,19 @@ interface CustomInputProps {
 }
 
 const InputField: React.FC<CustomInputProps> = memo(
-  ({
+  function InputField({
     label,
     onChange,
     isToggle,
     isInputArea,
-    width,
-    height,
     isDelete = false,
-    handlerDelete = useCallback(() => { }, []),
+    handlerDelete = () => {},
     isEdit = false,
-    handlerEdit = useCallback(() => { }, []),
-  }) => {
+    handlerEdit = () => {},
+  }) {
     const [inputValue, setInputValue] = useState("");
     const [isSwitchEnabled, setIsSwitchEnabled] = useState(false);
+
     const handleInputChange = useCallback(
       (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setInputValue(e.target.value);
@@ -42,7 +39,7 @@ const InputField: React.FC<CustomInputProps> = memo(
       (checked: boolean) => {
         setIsSwitchEnabled(checked);
       },
-      [isSwitchEnabled]
+      []
     );
 
     return (
@@ -69,16 +66,14 @@ const InputField: React.FC<CustomInputProps> = memo(
           />
         )}
 
-        {isToggle ? <SwitchButton isChecked={false} label="" onToggle={handleToggleChange} /> : ""}
-        {isEdit ? (
-          <EditIcon />
-        ) : null}
-        {isDelete ? (
-          <TrashIcon />
-        ) : null}
+        {isToggle && <SwitchButton isChecked={false} label="" onToggle={handleToggleChange} />}
+        {isEdit && <EditIcon />}
+        {isDelete && <TrashIcon />}
       </div>
     );
   }
 );
+
+InputField.displayName = 'InputField';
 
 export default memo(InputField);

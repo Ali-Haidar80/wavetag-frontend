@@ -24,7 +24,7 @@ const Page = () => {
           {subModal ? (<DetailModal setModal={setModal} setSubModal={setSubModal} />) : null}
         </div>
         <div className="flex flex-col gap-3">
-          {socialLinks.map((link, idx) => (<LinkCard name={link.name} img={link.img} />))}
+          {socialLinks.map((link, idx) => (<LinkCard key={idx} name={link.name} img={link.img} />))}
         </div>
         <p className="hidden md:block text-secondary-200  my-2 text-sm font-normal">Drag and drop the icons above to reorder them.</p>
         <h2 className="hidden md:block text-lg font-medium mt-2">Position</h2>

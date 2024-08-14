@@ -1,3 +1,4 @@
+import Image from "next/image";
 import AuthCarousel from "./AuthCarousel";
 
 const AuthRightSection = () => {
@@ -8,7 +9,7 @@ const AuthRightSection = () => {
             <AuthCarousel/>
         </div>
         <div className="-rotate-[45deg] backdrop-blur-[12px] box-shadow -left-[3.5%] top-[16%] absolute flex items-center justify-center bg-primary z-10 w-[120px] h-[120px] rounded-full">
-          <img
+          <Image
             src="/assets/logos/logo.png"
             className=""
             width={61}

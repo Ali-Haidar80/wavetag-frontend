@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useRef, useCallback, RefObject } from 'react';
 import "./editor.css";
 import ReactQuill, { Quill } from 'react-quill';

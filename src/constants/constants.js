@@ -2,7 +2,6 @@ import {
   AccessoriesIcon,
   ContactIcon,
   EmailIcon2,
-  HomeIcon,
   InsightIcon,
   InstagramIcon,
   IntegratioIcon,
@@ -10,7 +9,7 @@ import {
   MyCardIcon,
   SettingIcon,
   TwiterIcon,
-  YoutubeIcon,
+  YoutubeIcon
 } from "@/icons";
 
 export const Links = [
@@ -216,5 +215,9 @@ export const themes = [
 ]
 
 export const PreviewSocial = [
-  <EmailIcon2/>,<TwiterIcon/>,<InstagramIcon/>,<YoutubeIcon/>,<MusicIcon/>
+  <EmailIcon2 key="email" />,
+  <TwiterIcon key="twitter" />,
+  <InstagramIcon key="instagram" />,
+  <YoutubeIcon key="youtube" />,
+  <MusicIcon key="music" />
 ]

@@ -1,11 +1,13 @@
 import { DragIcon, TrashIcon } from "@/icons"
+import Image from "next/image"
 
-const LinkCard = ({name,img}:{name:string,img:string}) => {
+const LinkCard = ({key,name,img}:{key:number,name:string,img:string}) => {
   return (
-    <div className="flex items-center justify-between px-4 bg-secondary-90 py-3 rounded-lg">
+    <div key={key} className="flex items-center justify-between px-4 bg-secondary-90 py-3 rounded-lg">
     <div className="flex items-center gap-3 text-base font-medium">
       <DragIcon />
-      <img src={img} alt={name} className="h-[30px] w-[30px]" />
+      <Image width={100}
+          height={100} src={img} alt={name} className="h-[30px] w-[30px]" />
       {name}
     </div>
     <div className="flex items-center gap-3">

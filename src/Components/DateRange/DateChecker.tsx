@@ -22,21 +22,20 @@ function DateChecker() {
     setDates([dates]);
   };
 
-  console.log("25, 🚀 ~ DateChecker ~ dates:", dates);
   useEffect(() => {
     const handleClickOutside = (e: Event) => {
       if (
         datePickerRef?.current &&
-        !datePickerRef?.current?.contains(e.target as Node)
+        !datePickerRef?.current?.contains(e?.target as Node)
       ) {
         setShow(false);
       }
     };
     // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
+    document?.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
+      document?.removeEventListener("mousedown", handleClickOutside);
     };
   }, [datePickerRef]);
   return (
@@ -62,7 +61,7 @@ function DateChecker() {
           >
             <DateRangePicker
               onChange={(item) => {
-                updateDates(item.selection);
+                updateDates(item?.selection);
               }}
               moveRangeOnFirstSelection={false}
               ranges={dates}
