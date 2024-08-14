@@ -10,7 +10,7 @@ import { insightData } from "@/constants/constants";
 const Page = () => {
   return (
     <div className="">
-      {/* <div className="flex items-center justify-between mx-6">
+      <div className="flex items-center justify-between mx-6">
         <p className="text-secondary-500   mt-6 text-[1.375rem] font-bold">
           {" "}
           Insight{" "}
@@ -18,7 +18,7 @@ const Page = () => {
         <DateChecker />
       </div>
       <div className="flex items-center justify-between md:justify-normal px-2 rounded-lg mx-6 mt-4 gap-0 md:gap-3 lg:gap-5 bg-light-100  md:bg-transparent">
-        {insightData.map((data, idx) => (
+        {insightData?.map((data, idx) => (
           <>
             <InsightCard
               key={idx}
@@ -42,7 +42,7 @@ const Page = () => {
       </div>
       <div className="block md:hidden mx-6 mb-8">
         <ActiveAccessories />
-      </div> */}
+      </div>
     </div>
   );
 };

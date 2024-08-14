@@ -4,8 +4,11 @@ import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts/highstock";
 import variablePie from 'highcharts/modules/variable-pie';
 
-variablePie(Highcharts)
 const ViewTypeChart = () => {
+  if (typeof window !== "undefined") {
+    // Ensure Highcharts is only initialized on the client-side
+    variablePie(Highcharts);
+  }
   return (
     <div className="w-[50%] md:w-[30%]">
       <p className="text-secondary-500   mt-6 text-[1.375rem] font-semibold mb-2">
@@ -17,11 +20,11 @@ const ViewTypeChart = () => {
           <p className="flex items-center gap-2"><div className="w-[25px] h-[25px] bg-primary-200 rounded-full" /><span className="text-[12px] font-medium">Direct Off</span><span className="text-[12px] font-medium text-secondary-400  ">18%</span></p>
           <p className="flex items-center gap-2"><div className="w-[25px] h-[25px] bg-danger-100 rounded-full" /><span className="text-[12px] font-medium">Share</span><span className="text-[12px] font-medium text-secondary-400  ">100%</span></p>
         </p>
-        <HighchartsReact
+        {Viewoptions && (<HighchartsReact
           highcharts={Highcharts}
           options={Viewoptions}
           constructorType={'chart'}
-        />
+        />)}
       </div>
     </div>
   );

@@ -5,7 +5,10 @@ import Highcharts from "highcharts/highstock";
 import variablePie from "highcharts/modules/variable-pie";
 
 const TrafficTypeChart = () => {
-  variablePie(Highcharts);
+  if (typeof window !== "undefined") {
+    // Ensure Highcharts is only initialized on the client-side
+    variablePie(Highcharts);
+  }
   return (
     <div className="w-[50%] md:w-[30%]">
       <p className="text-secondary-500   mt-6 text-[1.375rem] font-semibold mb-2">
@@ -17,11 +20,13 @@ const TrafficTypeChart = () => {
           <p className="flex items-center gap-2"><div className="w-[25px] h-[25px] bg-primary-100 rounded-full" /><span className="text-[12px] font-medium">Direct Off</span><span className="text-[12px] font-medium text-secondary-400  ">18%</span></p>
           <p className="flex items-center gap-2"><div className="w-[25px] h-[25px] bg-danger-100 rounded-full" /><span className="text-[12px] font-medium">Share</span><span className="text-[12px] font-medium text-secondary-400  ">100%</span></p>
         </p>
-      <HighchartsReact
-        highcharts={Highcharts}
-        options={Trafficoptions}
-        constructorType={"chart"}
-      />
+        {Trafficoptions && (
+          <HighchartsReact
+            highcharts={Highcharts}
+            options={Trafficoptions}
+            constructorType={"chart"}
+          />
+        )}
        </div>
     </div>
   );
